@@ -19,6 +19,8 @@ namespace Battleship2.ViewModels
         public ObservableCollection<Boat>? Harbour { get; private set; }
         public GameViewModel()
         {
+            Ship ship = new Ship(size: 3);
+            ship.SetCoordinates(new System.Drawing.Point(0,9));
             FillHarbour();
             
         }
