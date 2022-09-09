@@ -1,5 +1,4 @@
 ﻿
-using Battleship2.Models;
 using Battleship2.Views.Boats;
 using System;
 using System.Collections.Generic;
@@ -38,7 +37,7 @@ namespace Battleship2.Views
 
            object data = e.Data.GetData(DataFormats.Serializable);
 
-            if (data is Boat boat )
+            if (data is Ship boat )
             {
                 Point currentPosition = e.GetPosition(ocean);
                 Point calculatedPosition = GetCalculatedPosition(currentPosition);
@@ -69,9 +68,9 @@ namespace Battleship2.Views
             return new Point(x, y);
         }
 
-        private void Ocean_drop(object sender, DragEventArgs e)
+        private void Ocean_Drop(object sender, DragEventArgs e)
         {
-            if (e.Source is Boat boat)
+            if (e.Source is Ship boat)
             {
                 double left = Canvas.GetLeft(boat);
                 double top = Canvas.GetTop(boat);

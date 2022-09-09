@@ -1,4 +1,4 @@
-﻿using Battleship2.Models;
+﻿
 using Battleship2.ViewModels.Base;
 
 using Battleship2.Views.Boats;
@@ -16,18 +16,16 @@ namespace Battleship2.ViewModels
         public PlayerViewModel Player1 { get; set; } = new HumanPlayerViewModel();
         public PlayerViewModel Player2 { get; set; } = new HumanPlayerViewModel();
 
-        public ObservableCollection<Boat>? Harbour { get; private set; }
+        public ObservableCollection<Ship>? Harbour { get; private set; }
         public GameViewModel()
-        {
-            Ship ship = new Ship(size: 3);
-            ship.SetCoordinates(new System.Drawing.Point(0,9));
+        {            
             FillHarbour();
             
         }
 
         private void FillHarbour()
         {
-            Harbour = new ObservableCollection<Boat>()
+            Harbour = new ObservableCollection<Ship>()
             {
                 new Cruiser(),
                 new Battleship()

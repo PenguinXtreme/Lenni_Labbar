@@ -1,5 +1,6 @@
-﻿using Battleship2.Models;
+﻿
 using Battleship2.ViewModels.Base;
+using Battleship2.Views.Boats;
 using Battleship2.Views.Components;
 using System;
 using System.Collections.Generic;
