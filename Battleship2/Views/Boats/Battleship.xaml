@@ -1,4 +1,4 @@
-﻿<local:Boat x:Class="Battleship2.Views.Boats.Battleship"
+﻿<local:Ship x:Class="Battleship2.Views.Boats.Battleship"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -14,4 +14,4 @@
         
             
     </Rectangle>
-</local:Boat>
+</local:Ship>

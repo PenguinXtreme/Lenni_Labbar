@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace Battleship2.Enum
 {
     /// <summary>
-    /// Boat direction
+    /// Ship direction
     /// </summary>
-    internal enum Direction
+    public enum Direction
     {
         Horizontal,
         Vertical,   
